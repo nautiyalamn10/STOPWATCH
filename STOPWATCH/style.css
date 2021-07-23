@@ -1,0 +1,67 @@
+body {
+  font-family: "Times New Roman", Times, serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+#heading {
+  background-color: #fff;
+  padding: 1rem;
+}
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+  background: linear-gradient(
+    -45deg,
+    rgb(247, 14, 14),
+    rgba(248, 93, 93, 0.726),
+    rgb(232, 248, 9),
+    rgb(92, 240, 6)
+  );
+  width: 500px;
+  height: 100px;
+  margin: auto;
+}
+button {
+  margin: auto 10px;
+  outline: none;
+  border: none;
+  padding: 1em 1em;
+  border-radius: 14%;
+  cursor: pointer;
+  box-shadow: 2px 2px 8px 1px rgba(5, 5, 5, 0.68);
+  color: white;
+  letter-spacing: 0.8em;
+  font-family: sans-serif;
+  font-weight: 700;
+  color: black;
+  /* background: linear-gradient(black, black, 45deg); */
+}
+#start {
+  /* background-color: hsl(110, 97%, 36%); */
+  background: linear-gradient(to right, green, lime);
+}
+#stop {
+  background: linear-gradient(to right, red, rgb(128, 0, 0));
+}
+#reset {
+  background: linear-gradient(to right, yellow, orange);
+}
+#start:hover {
+  transition: transform 0.3s linear;
+  transform: scale(1.05);
+}
+#stop:hover {
+  transition: transform 0.3s linear;
+  transform: scale(1.05);
+}
+#reset:hover {
+  transition: transform 0.3s linear;
+  transform: scale(1.05);
+}
+#start:active {
+  color: red;
+}
